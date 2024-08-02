@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercise</title>
+</head>
+<body>
+    <script>
+        function promptForNumber(message) {
+            let userInput = prompt(message);
+            return Number(userInput);
+        };
+
+        function add7(number) {
+            return number + 7;
+        };
+
+        function multiply(first, second) {
+            return first * second;
+        }
+
+        const number1 = promptForNumber("Write the number1");
+        const number2 = promptForNumber("Write the number2");
+
+
+        console.log(`First number + 7 is ${add7(number1)}`);
+        console.log(`First two numbers multiplied are ${multiply(number1, number2)}`);
+    </script>
+    
+</body>
+</html>
