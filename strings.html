@@ -7,25 +7,24 @@
 </head>
 <body>
     <script>
-        function promptForNumber(message) {
-            let userInput = prompt(message);
-            return Number(userInput);
+        function promptForString(message) {
+            const userInput = prompt(message);
+            return userInput;
         };
 
-        function add7(number) {
-            return number + 7;
-        };
-
-        function multiply(first, second) {
-            return first * second;
+        function capitalizeFirstLetter(message) {
+            let text = message.toLowerCase();
+            let firstLetter = text[0].toUpperCase();
+            let restOfText = text.slice(1);
+            return firstLetter + restOfText;
         }
 
-        const number1 = promptForNumber("Write the number1");
-        const number2 = promptForNumber("Write the number2");
+        const userText = promptForString("Write a sentence.");
+        console.log(capitalizeFirstLetter(userText));
+        console.log(userText.slice(-1));
 
 
-        console.log(`First number + 7 is ${add7(number1)}`);
-        console.log(`First two numbers multiplied are ${multiply(number1, number2)}`);
+
     </script>
     
 </body>
